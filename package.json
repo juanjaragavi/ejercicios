@@ -10,7 +10,8 @@
     "desa": "next dev",
     "montar": "next build",
     "iniciar": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npx gh-pages -d ."
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.11",
