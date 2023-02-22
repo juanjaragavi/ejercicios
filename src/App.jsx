@@ -47,7 +47,7 @@ function App() {
 
   const onSubmit = (data) => console.log(data);
 
-  const seleccionaPlan = [watch("plan"), useState("")];
+  const seleccionaPlan = watch('plan');
 
   let lastKnownScrollPosition = 0;
   let ticking = false;
@@ -295,7 +295,7 @@ function App() {
             </div>
             <div className="p-3 text-left">
               <label className="p-3">¿Deseas un Plan?</label>
-              <input {...register("plan")} type="checkbox" />
+              <input {...register("plan")} type="checkbox" id="plan" />
             </div>
             {seleccionaPlan && (
               <div className="p-3 text-left">
